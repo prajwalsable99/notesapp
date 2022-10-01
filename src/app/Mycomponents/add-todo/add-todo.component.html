@@ -1,0 +1,23 @@
+
+<div class="container-fluid bg-secondary  mb-8">
+    <h4 class="text-center"> Add note</h4>
+    <form (ngSubmit)="onSubmit()"  >
+    <div class="form-group ">
+
+        <label for="title">Add title</label>
+        <input type="text"  class="form-control" name="title"  [(ngModel)] = "title" aria-describedby="emailHelp">
+    </div>
+    <!-- <div class="form-group">
+
+        <label for="desc">add description</label>
+        <input type="text"  class="form-control" [(ngModel)] = "desc" name="desc" >
+    </div> -->
+    <div class="mb-3">
+        <label for="desc" class="form-label">Example textarea</label>
+        <textarea class="form-control" name="desc"  [(ngModel)] = "desc"rows="3"></textarea>
+      </div>
+    <div class="text-center "><button type="submit"  class="text-center btn-primary btn btn-lg bg-success">add</button></div>
+</form>
+</div>
+
+

@@ -1,0 +1,19 @@
+<!-- <p>todos works!</p> -->
+
+<div class="container-fluid  pd-5 bg-light">
+
+    <div class="mb-3">
+        <app-add-todo (todoAdd)="addTodo($event)"></app-add-todo>
+    </div>
+    
+    
+    <div class="container md-10 " *ngFor="let todo of todos">
+        
+   
+            <app-todo-item [todo]="todo" (todoDelete)="deleteTodo($event)"></app-todo-item>
+       
+    </div>
+
+</div>
+
+
